@@ -44,6 +44,7 @@
                     <p class="card-text">
                         <b>Created by :  <%= findcontent.mentor %></b>
                     </p>
+<<<<<<< HEAD
                     <% if (curUser) { %>
                         <% if(findcontent.price > 0){%>
                         <form class="payment-form">
@@ -64,3 +65,13 @@
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 
 </body>
+=======
+                    <%if(curUser){%>
+                        <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_QG5ou25MqKjxQE" async> </script> </form>
+                    <%}%>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+>>>>>>> 7a1ef3e315d9070615d54e0e564f480745f89b71

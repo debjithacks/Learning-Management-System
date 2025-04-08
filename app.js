@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 const adminRoutes = require('./routes/admin.js');
+=======
+>>>>>>> 7a1ef3e315d9070615d54e0e564f480745f89b71
 const express = require("express");
 const mongoose = require("mongoose");
 const session = require("express-session");
@@ -16,13 +19,19 @@ const flash = require('connect-flash')
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'views'))
 app.use(express.urlencoded({extended:true}))
+<<<<<<< HEAD
 app.use('/admin', adminRoutes);    
+=======
+>>>>>>> 7a1ef3e315d9070615d54e0e564f480745f89b71
 app.use(express.json());
 app.use(methodOverride('_method'))
 app.engine('ejs',ejsMate)
 app.use(express.static(path.join(__dirname, '/public')))
 app.use(express.static('public'));
+<<<<<<< HEAD
 require("dotenv").config();
+=======
+>>>>>>> 7a1ef3e315d9070615d54e0e564f480745f89b71
 
 const courses = require('./models/course')
 
@@ -30,10 +39,13 @@ const user = require('./routes/user.js')
 const User = require('./models/user.js')
 const passport = require('passport')
 
+<<<<<<< HEAD
 // payment
 const paymentRoutes = require("./routes/paymentroutes");
 
 
+=======
+>>>>>>> 7a1ef3e315d9070615d54e0e564f480745f89b71
 const store = Mongstore.create({
     mongoUrl:"mongodb://localhost:27017/lms",
     crypto:{
@@ -73,8 +85,12 @@ app.use((req,res,next)=>{
     res.locals.curUser = req.user
     next()
 })
+<<<<<<< HEAD
 // payment
 app.use("/payment", paymentRoutes);
+=======
+
+>>>>>>> 7a1ef3e315d9070615d54e0e564f480745f89b71
 
 async function main (){
     mongoose.connect("mongodb://localhost:27017/lms");
@@ -97,7 +113,10 @@ app.get('/eduraft/explorecourse',async (req,res)=>{
 app.get('/eduraft/myaccount', async(req,res)=>{
     res.render('myaccount')
 })
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7a1ef3e315d9070615d54e0e564f480745f89b71
 app.get('/eduraft/:id', async (req,res)=>{
     const {id} = req.params
     const findcontent = await courses.findById(id)

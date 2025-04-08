@@ -139,8 +139,12 @@ font-weight: 800 !important;
 .features {
     display: flex;
     justify-content: space-evenly;
+<<<<<<< HEAD
     flex-wrap:wrap ;
     gap: 0px;
+=======
+    gap: 5px;
+>>>>>>> 7a1ef3e315d9070615d54e0e564f480745f89b71
 }
 
 .feature {
