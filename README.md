@@ -97,7 +97,7 @@ node app.js
 
 ## 📸 Screenshots
 
-*(Add screenshots of your project here — login page, admin dashboard, course list, etc.)*
+*soon*
 
 ---
 
